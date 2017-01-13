@@ -1,0 +1,932 @@
+/*
+	Theme Name: Appic Child Theme
+	Theme URI: http://themeforest.net/user/olechka/portfolio
+	Description: Appic is a fully responsive business & technology WordPress theme
+	Version: 1.0
+	Tags: animation, app, blog, blue, light, bootstrap, business, landing page, retina ready, timeline, masonry, application, iPad, iPhone
+	Author: StudioEleven
+	Author URI: http://studioeleven.co.nz/
+	License:  GNU General Public License
+	License URI: license.txt
+	Template: appic
+*/
+@import url('../appic/style.css');
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+@font-face {
+ font-family: 'Geometria';
+ src: url('fonts/Geometria.otf');
+ src: url('fonts/Geometria.otf?#iefix') format('embedded-opentype'),
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'Geometria-Light';
+ src: url('fonts/Geometria-Light.otf');
+ src: url('fonts/Geometria-Light.otf?#iefix') format('embedded-opentype'),
+ font-weight: lighter;
+ font-style: normal;
+}
+
+@font-face {
+ font-family: 'Geometria-Bold';
+ font-weight: normal;
+ font-style: normal;
+ src: url('fonts/Geometria-Bold.otf') format('opentype');
+ src: url('fonts/Geometria-Bold.otf?#iefix') format('embedded-opentype'),
+}
+
+@font-face {
+ font-family: 'Geometria-Medium';
+ font-weight: normal;
+ font-style: normal;
+ src: url('fonts/Geometria-Medium.otf') format('opentype');
+ src: url('fonts/Geometria-Medium.otf?#iefix') format('embedded-opentype'),
+}
+
+@font-face {
+ font-family: 'Geometria ExtraBold';
+ font-weight: normal;
+ font-style: normal;
+ src: url('fonts/Geometria-ExtraBold.otf') format('opentype');
+ src: url('fonts/Geometria-ExtraBold.otf?#iefix') format('embedded-opentype'),
+}
+
+body{
+	font-family: 'Geometria', sans-serif !important;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Geometria', sans-serif !important;
+    letter-spacing: 0px;
+    /*font-weight: lighter;*/
+}
+
+p{
+	font-family: "Geometria", sans-serif;
+}
+
+a{
+	color: #10b0e7;
+}
+
+header{
+	height: 203px;
+	position: relative;
+	z-index: 100;
+}
+
+.action-area-mini, .foto-pattern{
+	background: none;
+}
+
+.foto-pattern .right_align{
+	background-color: #80c342;
+	padding: 20px;
+	margin-top: 20px;
+	width: 370px;
+	float: right;
+}
+
+.foto-pattern .right_align .span1{
+	margin-top: -40px;
+	margin-left: 0;
+}
+.foto-pattern .right_align h4{
+	color: #fff;
+	text-align: center;
+}
+.foto-pattern .right_align .border-double{
+	border: 0;
+}
+
+.foto-pattern .right_align .messege-form{
+	padding: 0;
+}
+.foto-pattern .right_align .wpcf7-text{
+	width: 260px !important;
+}
+
+.foto-pattern .right_align .wpcf7-submit{
+	border: 1px solid #fff;
+	color: #fff;
+	background: none !important;
+	padding: 5px 20px; 
+}
+.breadcrumb a, .breadcrumb > li > .divider{
+	color: #00abe5;
+}
+
+.forcefullwidth_wrapper_tp_banner{
+	z-index: 1;
+	margin-top: -200px !important;
+}
+
+.blue1{
+	color: #00abe5;
+}
+
+.main-navbar {
+    min-height: 120px;
+    position: relative;
+}
+
+.top-nav{
+	background: none;
+	height: 45px;
+}
+
+.top-nav .customer_saying{
+	color: #00aae8;
+	font-size: 17px;
+    line-height: 45px;
+}
+
+.logo{
+	padding: 0;
+}
+
+.blue-line-wrap{
+	background: #fff !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    padding-top: 10px;
+}
+.blue-line-wrap:before{
+	background: none !important; 
+}
+
+.blue-line-wrap h2{
+	font-size: 22px;
+	font-style: italic;
+	margin-top: 50px;
+	padding-left: 200px;
+	color: #333333;
+	font-family: "Geometria-Bold", sans-serif !important;
+}
+
+.main-nav-wrap, .blue-line-wrap{
+	background: rgb(255,255,255);
+	background: rgba(255,255,255, 0.9);
+	border-top: 0;
+}
+
+.main-nav-wrap.fixed-pos{
+	position: inherit;
+}
+
+#header_right{
+	text-align: right;
+	font-family: "Geometria", sans-serif !important;
+}
+
+#header_right a{
+	display: inline-block;
+    margin-left: 20px;
+    padding-bottom: 0px;
+    font-family: "Geometria-Medium", sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#header_right h2{
+	margin-top: 0px;
+	font-style: normal;
+	color: #00abe5;
+	font-size: 20px;
+}
+
+#header_menu_holder{
+	background: #fff;
+	-webkit-box-shadow: 0px 10px 5px 0px rgba(200,200,200,0.45);
+-moz-box-shadow: 0px 10px 5px 0px rgba(200,200,200,0.45);
+box-shadow: 0px 10px 5px 0px rgba(200,200,200,0.45);
+}
+ul#navigation, .menu ul{
+	float: none;
+	margin-right: auto;
+	height: auto;
+}
+ul#navigation a, .menu ul a{
+	color: #575859;
+	font-weight: normal !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase;
+}
+
+ul#navigation > li, .menu ul > li{
+	min-height: 1px;
+}
+ul#navigation > li > a{
+	font-family: "Geometria-Medium", sans-serif;
+}
+ul#navigation > li > a, .menu ul > li > a{
+	padding: 5px 20px 5px 5px;
+        font-weight: normal;
+    letter-spacing: 1.1px;
+}
+
+ul#navigation > li:hover{
+	border-bottom: 0 !important;
+	padding-bottom: 0 !important;
+	background: none;
+}
+
+.full_width_gray{
+	position: relative;
+	width: 100%;
+	background: url(images/bg_gray.png) left top repeat;
+}
+
+.page-content h1{
+	color: #00abe5;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.page-content p{
+	color: #575859;
+}
+
+#our_process_graph{
+	width: 100%;
+	height: 400px;
+	background: url(images/line-graph.png) 50px 200px no-repeat;
+	position: relative;
+}
+
+.our_process_content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 130px; 
+	/*background-color: #fff;*/
+	overflow: hidden;
+}
+.our_process_content h5{
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+
+#process_1{
+	top: 320px;
+}
+#process_2{
+	top: 80px;
+	left: 150px;
+}
+#process_3{
+	top: 280px;
+	left: 300px;
+}
+#process_4{
+	top: 100px;
+	left: 450px;
+}
+#process_5{
+	top: 290px;
+	left: 590px;
+}
+#process_6{
+	top: 100px;
+	left: 730px;
+}
+#process_7{
+	top: 300px;
+	left: 880px;
+}
+
+.space_me_left{
+
+}
+
+.space_me_left h1{
+	background: url(images/green_checkmark.png) left center no-repeat;
+	padding-left: 70px;
+	line-height: 60px;
+}
+
+.space_me_left p{
+	padding-left: 70px;
+}
+.footer-widget-wrap, .footer-wrap{
+	background-color: #515253;
+}
+
+.footer-widget .wpcf7-submit{
+	display: block;
+	clear: both;
+	font-family: "Geometria";
+	font-weight: 800;
+	background: none !important;
+	border: 2px solid #00aae7 !important;
+	text-indent: 0 !important;
+	color: #00aae7 !important;
+	width: auto !important;
+	height: auto !important;
+	text-transform: uppercase;
+	padding: 5px 20px !important;
+}
+
+.footer-widget-wrap h2{
+	color: #fff;
+    font-size: 17px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    font-family: "Geometria-Medium" sans-serif !important;
+}
+
+.footer-widget-wrap p{
+	color: #dcdcdc;
+	font-size: 14px;
+}
+
+div.footer-wrap{
+	border-top: 0;
+	color: #d6d6d6;
+	background-color: #515253;
+}
+
+.blue-line-wrap{
+	background: none !important;
+}
+
+.footer-wrap .container{
+	border-top: 1px solid #666666;
+	padding-top: 20px;
+}
+.footer-wrap .blue-line-wrap{
+	margin-top: 0;
+}
+
+.footer-wrap .right_align{
+	text-align: right;
+}
+
+.footer_center_div div{
+	padding-left: 60px;
+}
+
+.footer_above{
+	background-color: #a9a9a9;
+	color: #ffffff;
+	/*margin-top: 80px;*/
+}
+
+.footer_above .span8{
+	margin-top: 35px;
+	background: url(images/signature.png) right center no-repeat;
+}
+
+.footer_above .span8 p{
+	padding-right: 150px;
+}
+
+.footer_above .span12{
+	margin-top: 35px;
+	background: url(images/signature.png) 95% center no-repeat;
+	position: absolute;
+	padding-bottom: 10px;
+}
+
+.footer_above .span12 p{
+	padding-right: 250px;
+}
+
+.footer_above .span4{
+	text-align: right;
+	position: relative;
+	top: -65px;
+	float: right;
+}
+.footer_above .span4 img{
+	margin-top: -80px;
+}
+
+.wpcf7-form{
+	margin-top: 30px !important;
+}
+
+.wpcf7-text{
+	background: #fff !important;
+	color: #757678;
+	font-style: italic;
+	margin-bottom: 10px;
+	width: 70% !important;
+	float: left;
+	margin-bottom: 10px !important;
+}
+
+.wpcf7-submit{
+	position: inherit !important;
+	background: url(images/benefits-arrow-white.png) no-repeat scroll 0 0 !important;
+}
+
+.wpcf7-form-control-wrap{
+	
+}
+
+#home_block1{
+	position: relative;
+	top: -30px;
+	z-index: 100;
+}
+
+#home_block1 .container{
+	background: #80c342;
+	height: 82px;
+	display: block;
+}
+
+#home_block1 img{
+	position: relative;
+    top: -30px;
+    left: 15px;
+}
+
+#home_block1 h3{
+	padding-right: 30px;
+	color: #fff;
+}
+
+#home_block1 .wpcf7-form{
+	margin-top: 5px !important;
+	border: 0 !important;
+	padding-left: 0;
+}
+
+#home_block1 .wpcf7-text{
+	width: 40% !important;
+}
+
+#home_block1 .wpcf7-submit{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+    border: 2px solid #fff;
+    font-size: 14px;
+    padding: 3px 15px;
+    color: #fff;
+    font-family: "Geometria-Medium" sans-serif;
+}
+
+#home_block2{
+	position: relative;
+	top: -10px;
+	/*height: 375px;*/
+	padding-bottom: 20px;
+}
+
+#home_block2 .small_featured img{
+	width: 130px;
+	float: left;
+	padding-right: 10px;
+}
+
+#home_block2 .featured_listing_price{
+	color: #7ec537;
+}
+
+
+
+.featured_listing_extend{
+	min-height: 250px;
+	margin-top: 15px;
+	color: #575859;
+}
+
+.small_featured{
+	width: 50%;
+	float: left;
+}
+
+.listing_summary{
+	width: 40%;
+	padding-left: 10px;
+	float: left;
+}
+
+.featured_listing_title{
+	margin-bottom: 10px;
+	display: block;
+	color: #515252;
+	font-size: 15px;
+	font-family: "Geometria-Medium" sans-serif;
+}
+.featured_listing_bedrooms{
+	float: left;
+	padding-left: 20px;
+	background: url(images/icon_bed.png) left 0px no-repeat;
+	color: #929292;
+	font-family: "Geometria-Medium" sans-serif;
+}
+
+.featured_listing_bathrooms{
+	float: left;
+	padding-left: 20px;
+	background: url(images/icon_bath.png) left 1px no-repeat;
+	margin-left: 20px;
+	color: #929292;
+	font-family: "Geometria-Medium" sans-serif;
+}
+
+.featured_listing_price{
+	display: block;
+	margin-top: 10px;
+}
+
+.featured_listing_extend h4{
+	color: #80c342;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: "Geometria-Medium" sans-serif !important;
+}
+#home_block2 .featured_listing_hidden_info{
+	display: none;
+}
+
+#home_block2 .featured_listing_hidden_info .span4{
+	width: 350px;
+}
+
+#home_block3{
+	position: relative;
+	margin-bottom: 20px;
+	background: #02abe5;
+	padding: 30px 0;
+	min-height: 500px;
+	color: #fff;
+	font-size: 16px;
+}
+
+#home_block3 .btn-info{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    margin-top: 30px;
+    font-size: 15px;
+    padding: 10px 25px;
+    font-family: 'Geometria', sans-serif;
+}
+
+#home_block3 h3{
+	color: #fff;
+}
+
+#tabbed_title{
+	text-align: center;
+}
+
+.tab_title{
+	padding: 10px 30px;
+	margin: 0 5px;
+	background-color: #35bcea;
+	color: #fff;
+	display: inline-block;
+	cursor: pointer;
+	font-family: "Geometria-Medium" sans-serif;
+	font-size: 14px;
+}
+
+.visible_tab, .tab_title:hover{
+	color: #00aae6;
+	background-color: #f5f5f5;
+}
+
+#tab_2, #tab_3{
+	display: none;
+}
+.listings_tab{
+	background: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.featured_h{
+	margin-left: 20px;
+}
+
+/*.listings_tab .featured_listing_bedrooms, .listings_tab .featured_listing_bathrooms{
+	color: #777;
+	font-size: 12px;
+}*/
+.tabbed_span2{
+	width: 204px;
+}
+
+.tab_listing_image{
+	min-height: 140px;
+}
+
+.tab_listing_city{
+	color: #1bb3e9;
+	font-size: 16px;
+	font-family: "Geometria-Medium" sans-serif;
+}
+
+#home_block4{
+	background: #f6f6f6;
+	padding: 30px 0;
+	margin-top: -20px;
+}
+
+#home_block4 .larger_span{
+	width: 210px;
+}
+
+#home_block4 p{
+	color: #515252;
+	font-family: "Geometria-Medium" sans-serif;
+}
+
+#home_block4 h3{
+	color: #00abe5;
+}
+
+
+#home_block5{
+	padding: 30px 0;
+	margin-bottom: 50px;
+}
+
+#home_block5 h2, #home_block5 h3{
+	color: #7ec537;
+}
+
+#home_block5 h2{
+	font-size: 26px;
+    font-family: "Geometria-Bold" sans-serif !important;
+}
+
+#home_block1 h3, #home_block2 h3, #home_block3 h3, #home_block4 h3, #home_block5 h3{
+	font-size: 24px;
+    /*font-weight: lighter;*/
+    /*letter-spacing: 1.5px;*/
+    line-height: 26px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    /*font-family: 'Geometria-Light', sans-serif !important;*/
+}
+
+#home_block5 p{
+	color: #515252;
+}
+
+#home_block1 h3{
+	font-weight: bold;
+	letter-spacing: 0;
+	font-family: "Geometria-Medium" !important;
+}
+
+#home_block5 .btn-success{
+	border: 2px solid #7fc538;
+	background: none;
+	color: #7ec537;
+	text-shadow: 0;
+	margin-top: 20px;
+	font-size: 15px;
+	padding: 10px 25px;
+	font-family: "Geometria", sans-serif;
+}
+
+.call-action-photo-wrapper{
+	height: 246px;
+}
+
+#carousel_inner {  
+float:left; /* important for inline positioning */  
+width:1130px; /* important (this width = width of list item(including margin) * items shown */  
+overflow: hidden;  /* important (hide the items outside the div) */  
+
+}  
+  
+#carousel_ul {  
+position:relative;  
+left:0px; /* important (this should be negative number of list items width(including margin) */  
+margin: 0px;  
+padding: 0px;  
+width:9999px; /* important */  
+}  
+  
+#carousel_ul li{  
+float: left; /* important for inline positioning of the list items */  
+width:300px;  /* fixed width, important */ 
+height: 100px; 
+list-style: none;
+padding-bottom: 40px;
+background: url("images/line_down.png") left bottom no-repeat;
+} 
+
+.li_inactive{
+	background: url("images/line_down.png") left bottom no-repeat;
+}
+.featured_active{
+	background: url("images/line_arrow_down.png") left bottom no-repeat !important;
+} 
+.featured_inactive{
+	background: url("images/line_down.png") left bottom no-repeat;
+}
+  
+#carousel_ul li img {  
+.margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/  
+/* styling */  
+cursor:pointer;  
+cursor: hand;  
+border:0px;  
+}  
+#left_scroll, #right_scroll{  
+float:left;  
+height:100px;  
+width:20px;
+cursor: pointer;  
+cursor: hand;  
+}  
+#left_scroll{
+	background: url(images/arrow_left.png) left center no-repeat;
+}
+
+#right_scroll{
+	background: url(images/arrow_right.png) left center no-repeat;
+}
+
+.featured_listings .row{
+	margin-left: 0;
+}
+
+.wpcf7-text {
+    background: none repeat scroll 0 0 #fff !important;
+    color: #757678;
+    float: left;
+    font-style: italic;
+    margin-bottom: 10px !important;
+    width: 70% !important;
+    font-family: 'Geometria', sans-serif;
+    letter-spacing: 1.1px;
+    font-weight: lighter;
+}
+
+.tp-caption a{
+	color: #fff;
+}
+
+.tp-button.blue, .tp-button.blue:hover{
+	border: 0 none !important;
+    background: none;
+    box-shadow: 0 0;
+    border: 2px solid #01aae5 !important;
+    color: #00aae5 !important;
+    text-shadow: 0 0 !important;
+    font-family: geometria;
+}
+
+.tp-button.darkgrey, .tp-button.grey, .tp-button.darkgrey:hover{
+	border: 0 none !important;
+    background: none;
+    box-shadow: 0 0;
+    border: 2px solid #333 !important;
+    color: #333 !important;
+    text-shadow: 0 0 !important;
+    font-family: geometria;
+}
+
+.tp-button.lightgrey, .tp-button.lightgrey:hover{
+	border: 0 none !important;
+    background: none;
+    box-shadow: 0 0;
+    border: 2px solid #fff !important;
+    color: #fff !important;
+    text-shadow: 0 0 !important;
+    font-family: geometria;
+}
+
+p.p_higher{
+	line-height: 26px;
+}
+
+a.looking{
+	padding-top: 10px;
+	font-size: 14px !important;
+}
+@media only screen and (min-width: 979px) and (max-width: 1199px) {
+
+}
+
+@media (max-width: 979px) {		
+	.top-nav{
+		display: none;
+	}
+
+	.blue-line-wrap h2{
+		font-size: 15px;
+		margin-top: 0;
+		padding-left: 0;
+	}
+
+	.main-navbar .pull-left{
+		clear: both;
+	}
+
+	#header_right{
+		position: relative;
+		top: -100px;
+		display: none;
+	}
+
+	.forcefullwidth_wrapper_tp_banner{
+		display: none;
+	}
+
+	#navigation-box{
+		position: relative;
+		top: -100px;
+	}
+
+	#home_block1{
+		display: none;
+	}
+	#home_block1 .span1{
+		display: none;
+	}
+
+	#home_block1 .span5 h3{
+		font-size: 15px;
+		text-align: center;
+	}
+
+	#home_block1 .wpcf7-form{
+		margin-top: -40px !important; 
+	}
+
+	#home_block1 .wpcf7-form p{
+		text-align: center;
+	}
+
+	#home_block1 .wpcf7-text{
+		width: 33% !important;
+		margin-left: 10px;
+		font-family: "Geometria-Medium" sans-serif;
+	}
+
+	#home_block1 .wpcf7-submit{
+		font-size: 13px;
+	}
+
+	#home_block2{
+		display: none;
+	}
+
+	h3{
+		font-size: 20px !important;
+		line-height: 24px;
+	}
+	.tabbed_span2{
+		margin: 0 auto;
+	}
+
+	#home_block4 .larger_span{
+		width: auto;
+	}
+
+	.footer_above .span4{
+		display: none;
+	}
+
+	.footer_above .span8{
+		margin-bottom: 35px;
+	}
+
+	.footer-widget{
+		padding: 0;
+	}
+
+	.footer-widget .span3{
+		padding: 15px;
+	}
+
+	.footer_center_div div{
+		padding-left: 0;
+	}
+
+	.footer-wrap .container{
+		border-top: 0;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 498px) {
+	
+}
