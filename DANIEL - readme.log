@@ -1,0 +1,11 @@
+Changed the wp-listings plugin:
+***
+wp-listings/includes/class-listings.php
+//added by daniel
+			    __( 'Livingrooms:', 'wp_listings' )				=> '_listing_livingrooms',
+			    __( 'Garage Lots:', 'wp_listings' )				=> '_listing_garages'
+
+***
+wp-listings/includes/views/listing-details-metabox.php
+***
+wp-listings/includes/views/single-listing.php
